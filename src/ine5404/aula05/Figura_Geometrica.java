@@ -9,13 +9,6 @@ package ine5404.aula05;
  *
  * @author 17100518
  */
-public class Exercicio1 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public interface Figura_Geometrica {
+    public double calculateArea();
 }
