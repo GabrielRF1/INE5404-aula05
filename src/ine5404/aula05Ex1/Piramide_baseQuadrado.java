@@ -34,6 +34,7 @@ public class Piramide_baseQuadrado implements Figura3D{
     public void askH(){
         Scanner sc= new Scanner(System.in);
         System.out.print("Altura da piramide: ");
+        h= sc.nextDouble();
     }
 
   
