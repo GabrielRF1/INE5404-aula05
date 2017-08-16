@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ine5404.aula05;
+package ine5404.aula05Ex1;
 
 import java.util.Scanner;
 
@@ -13,8 +13,13 @@ import java.util.Scanner;
  */
 public class Circulo implements Figura_Geometrica {
 
-    double radius, area;
+    private double radius, area;
 
+    public Circulo() {
+        
+    }
+
+    
     @Override
     public double calculateArea() {
         area = radius * radius * Math.PI;
@@ -23,7 +28,12 @@ public class Circulo implements Figura_Geometrica {
 
     public void setRadius() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Raio? ");
+        System.out.println("Raio do circulo: ");
         radius = sc.nextDouble();
     }
+
+    public double getRadius() {
+        return radius;
+    }
+    
 }
