@@ -30,7 +30,7 @@ public class Exercicio1_FigurasGeometricas {
                     Circulo c2 = new Circulo(0,0);
                     c2.setRadius();
                     c2.calculateArea();
-                    Cilindro si = new Cilindro(c2);
+                    Cilindro si = new Cilindro(0,0,0,c2);
                     si.askAltura();
                     System.out.printf("A área é: %.2f \nO volume é: %.2f\n\n", si.calculateArea(), si.calVolume());
                     break;
@@ -51,7 +51,7 @@ public class Exercicio1_FigurasGeometricas {
                     rt.setH();
                     rt.setB();
                     rt.calculateArea();
-                    Piramide_baseQuadrado pqq = new Piramide_baseQuadrado(rt);
+                    Piramide_baseQuadrado pqq = new Piramide_baseQuadrado(0,0,0,rt);
                     pqq.askH();
                     System.out.printf("área: %.2f \nVolume: %.2f\n\n", pqq.calculateArea(), pqq.calVolume());
                     break;
@@ -60,7 +60,7 @@ public class Exercicio1_FigurasGeometricas {
                     rr.setB();
                     rr.setH();
                     rr.calculateArea();
-                    Bloco b = new Bloco(rr);
+                    Bloco b = new Bloco(0,0,0,rr);
                     b.askProfu();
                     System.out.printf("Área: %.2f \nVolume: %.2f\n\n", b.calculateArea(), b.calVolume());
                     break;

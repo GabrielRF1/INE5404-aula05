@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Cilindro extends Plano_3D implements Figura3D{
     Circulo base;
-    double altura,volume, area;
+    double altura;
 
     public Cilindro(int x,int y,int z, Circulo base) {
         super(x, y, z);
@@ -23,14 +23,12 @@ public class Cilindro extends Plano_3D implements Figura3D{
     
     @Override
     public double calVolume() {
-        volume=base.calculateArea()*altura;
-        return volume;
+        return base.calculateArea()*altura;
     }
 
     @Override
     public double calculateArea() {
-        area= 2*base.calculateArea()+ 2*base.getRadius()*Math.PI*altura;
-        return area;
+        return 2*base.calculateArea()+ 2*base.getRadius()*Math.PI*altura;
     }
     public void askAltura(){
     Scanner sc = new Scanner(System.in);

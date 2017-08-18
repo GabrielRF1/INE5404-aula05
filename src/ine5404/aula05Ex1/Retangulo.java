@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Retangulo extends PlanoCartesiano_2D implements Figura_Geometrica {
 
-    private double base, altura, area;
+    private double base, altura;
 
     public Retangulo(int x, int y) {
         super(x, y);
@@ -23,8 +23,7 @@ public class Retangulo extends PlanoCartesiano_2D implements Figura_Geometrica {
 
     @Override
     public double calculateArea() {
-        area = base * altura;
-        return area;
+        return  base * altura;
     }
 
     public void setB() {

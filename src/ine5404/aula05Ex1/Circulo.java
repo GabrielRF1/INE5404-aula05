@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Circulo extends PlanoCartesiano_2D implements Figura_Geometrica {
 
-    private double radius, area;
+    private double radius;
 
     public Circulo(int x, int y) {
         super(x, y);
@@ -21,8 +21,7 @@ public class Circulo extends PlanoCartesiano_2D implements Figura_Geometrica {
 
     @Override
     public double calculateArea() {
-        area = radius * radius * Math.PI;
-        return area;
+        return radius * radius * Math.PI;
     }
 
     public void setRadius() {

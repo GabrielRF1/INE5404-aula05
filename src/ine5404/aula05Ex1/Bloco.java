@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Bloco extends Plano_3D implements Figura3D{
     private Retangulo R;
-    private double profundidade, area, volume;
+    private double profundidade;
 
     public Bloco(int x,int y,int z,Retangulo R) {
         super(x,y,z);
@@ -22,14 +22,12 @@ public class Bloco extends Plano_3D implements Figura3D{
     
     @Override
     public double calVolume() {
-        volume= R.calculateArea()*profundidade;
-        return volume;
+        return R.calculateArea()*profundidade;
     }
 
     @Override
     public double calculateArea() {
-        area= (2*profundidade*R.getAltura())+(2*profundidade*R.getBase())+(2*R.getAltura()*R.getBase());
-        return area;
+        return (2*profundidade*R.getAltura())+(2*profundidade*R.getBase())+(2*R.getAltura()*R.getBase());
     }
     public void askProfu(){
         Scanner sc=new Scanner(System.in);

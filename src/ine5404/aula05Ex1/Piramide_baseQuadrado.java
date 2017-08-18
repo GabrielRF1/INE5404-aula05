@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Piramide_baseQuadrado extends Plano_3D implements Figura3D{
     Retangulo base;
-    double h, volume, area;
+    double h;
 
     public Piramide_baseQuadrado(int x, int y, int z, Retangulo base) {
         super(x,y,z);
@@ -22,14 +22,12 @@ public class Piramide_baseQuadrado extends Plano_3D implements Figura3D{
     
     @Override
     public double calVolume() {
-    volume= (base.calculateArea()*h)/3;
-    return volume;
+    return (base.calculateArea()*h)/3;
     }
 
     @Override
     public double calculateArea() {
-        area= base.calculateArea()+ 2*(base.getAltura()*h)/2+ 2*(base.getBase()*h)/2;
-       return area;
+       return base.calculateArea()+ 2*(base.getAltura()*h)/2+ 2*(base.getBase()*h)/2;
     }
     
     public void askH(){

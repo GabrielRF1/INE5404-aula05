@@ -11,35 +11,34 @@ import java.util.Scanner;
  *
  * @author 17100518
  */
-public class Triangulo extends PlanoCartesiano_2D implements Figura_Geometrica{
-    double b, h, area;
+public class Triangulo extends PlanoCartesiano_2D implements Figura_Geometrica {
+
+    double b, h;
 
     public Triangulo(int x, int y) {
-    super(x,y);
+        super(x, y);
     }
-
-   
 
     @Override
     public double calculateArea() {
-    area= (b*h)/2;
-    return area;
+        return (b * h) / 2;
     }
-    public void setB(){
+
+    public void setB() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Base do triângulo: ");
-        b= sc.nextDouble();
-   }
-    public void setH(){
-   Scanner sc = new Scanner(System.in);
+        b = sc.nextDouble();
+    }
+
+    public void setH() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Altura do triângulo: ");
-        h= sc.nextDouble();
+        h = sc.nextDouble();
     }
 
     @Override
     public void moveTo(int newX, int newY) {
         super.moveTo(newX, newY); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
+
 }
