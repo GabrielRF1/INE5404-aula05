@@ -11,11 +11,12 @@ import java.util.Scanner;
  *
  * @author 17100518
  */
-public class Bloco implements Figura3D{
+public class Bloco extends Plano_3D implements Figura3D{
     private Retangulo R;
     private double profundidade, area, volume;
 
-    public Bloco(Retangulo R) {
+    public Bloco(int x,int y,int z,Retangulo R) {
+        super(x,y,z);
         this.R = R;
     }
     

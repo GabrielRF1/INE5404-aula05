@@ -11,11 +11,12 @@ import java.util.Scanner;
  *
  * @author 17100518
  */
-public class Cilindro implements Figura3D{
+public class Cilindro extends Plano_3D implements Figura3D{
     Circulo base;
     double altura,volume, area;
 
-    public Cilindro(Circulo base) {
+    public Cilindro(int x,int y,int z, Circulo base) {
+        super(x, y, z);
         this.base = base;
     }
     

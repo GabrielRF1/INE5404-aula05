@@ -11,15 +11,14 @@ import java.util.Scanner;
  *
  * @author 17100518
  */
-public class Circulo implements Figura_Geometrica {
+public class Circulo extends PlanoCartesiano_2D implements Figura_Geometrica {
 
     private double radius, area;
 
-    public Circulo() {
-        
+    public Circulo(int x, int y) {
+        super(x, y);
     }
 
-    
     @Override
     public double calculateArea() {
         area = radius * radius * Math.PI;
@@ -35,5 +34,5 @@ public class Circulo implements Figura_Geometrica {
     public double getRadius() {
         return radius;
     }
-    
+
 }

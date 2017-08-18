@@ -13,6 +13,11 @@ public abstract class Plano_3D extends PlanoCartesiano_2D {
 
     int z;
 
+    public Plano_3D(int z, int x, int y) {
+        super(x, y);
+        this.z = z;
+    }
+
     public void moveTo(int newX, int newY, int newZ) {
         super.moveTo(newX, newY);
         z = newZ;

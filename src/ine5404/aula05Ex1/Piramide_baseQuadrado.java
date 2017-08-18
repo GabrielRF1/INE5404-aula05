@@ -11,11 +11,12 @@ import java.util.Scanner;
  *
  * @author 17100518
  */
-public class Piramide_baseQuadrado implements Figura3D{
+public class Piramide_baseQuadrado extends Plano_3D implements Figura3D{
     Retangulo base;
     double h, volume, area;
 
-    public Piramide_baseQuadrado(Retangulo base) {
+    public Piramide_baseQuadrado(int x, int y, int z, Retangulo base) {
+        super(x,y,z);
         this.base = base;
     }
     

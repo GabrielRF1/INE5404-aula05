@@ -11,12 +11,15 @@ import java.util.Scanner;
  *
  * @author 17100518
  */
-public class Retangulo implements Figura_Geometrica {
+public class Retangulo extends PlanoCartesiano_2D implements Figura_Geometrica {
 
     private double base, altura, area;
 
-    public Retangulo() {
+    public Retangulo(int x, int y) {
+        super(x, y);
     }
+
+    
 
     @Override
     public double calculateArea() {
