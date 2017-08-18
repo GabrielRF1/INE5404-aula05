@@ -24,7 +24,7 @@ public class Exercicio1_FigurasGeometricas {
                 case 1:
                     Circulo c = new Circulo();
                     c.setRadius();
-                    System.out.printf("A área é: %.2f", c.calculateArea());
+                    System.out.printf("A área é: %.2f\n\n", c.calculateArea());
                     break;
                 case 2:
                     Circulo c2 = new Circulo();
@@ -32,19 +32,19 @@ public class Exercicio1_FigurasGeometricas {
                     c2.calculateArea();
                     Cilindro si = new Cilindro(c2);
                     si.askAltura();
-                    System.out.printf("A área é: %.2f \nO volume é: %.2f", si.calculateArea(), si.calVolume());
+                    System.out.printf("A área é: %.2f \nO volume é: %.2f\n\n", si.calculateArea(), si.calVolume());
                     break;
                 case 3:
                     Triangulo tr = new Triangulo();
                     tr.setB();
                     tr.setH();
-                    System.out.printf("A área é: %.2f", tr.calculateArea());
+                    System.out.printf("A área é: %.2f\n\n", tr.calculateArea());
                     break;
                 case 4:
                     Retangulo rx = new Retangulo();
                     rx.setB();
                     rx.setH();
-                    System.out.printf("Área: %.2f", rx.calculateArea());
+                    System.out.printf("Área: %.2f\n\n", rx.calculateArea());
                     break;
                 case 5:
                     Retangulo rt = new Retangulo();
@@ -53,7 +53,7 @@ public class Exercicio1_FigurasGeometricas {
                     rt.calculateArea();
                     Piramide_baseQuadrado pqq = new Piramide_baseQuadrado(rt);
                     pqq.askH();
-                    System.out.printf("área: %.2f \nVolume: %.2f", pqq.calculateArea(), pqq.calVolume());
+                    System.out.printf("área: %.2f \nVolume: %.2f\n\n", pqq.calculateArea(), pqq.calVolume());
                     break;
                 case 6:
                     Retangulo rr = new Retangulo();
@@ -62,7 +62,7 @@ public class Exercicio1_FigurasGeometricas {
                     rr.calculateArea();
                     Bloco b = new Bloco(rr);
                     b.askProfu();
-                    System.out.printf("Área: %.2f \nVolume: %.2f", b.calculateArea(), b.calVolume());
+                    System.out.printf("Área: %.2f \nVolume: %.2f\n\n", b.calculateArea(), b.calVolume());
                     break;
 
                 default:

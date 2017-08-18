@@ -33,6 +33,7 @@ public class Bloco implements Figura3D{
     public void askProfu(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Profundidade do Bloco: ");
-        sc.nextDouble();
+        profundidade=sc.nextDouble();
+     
     }
 }
